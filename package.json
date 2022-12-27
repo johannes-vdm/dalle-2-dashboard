@@ -2,6 +2,7 @@
   "name": "dalle-2-dashboard",
   "private": true,
   "version": "0.0.0",
+  "homepage": "/projects/dalle2",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",

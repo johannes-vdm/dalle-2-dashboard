@@ -1,4 +1,4 @@
-import { CollectionData, Tag } from "./components/App"
+import { CollectionData, Tag } from "../components/App"
 import { ImageForm } from "./ImageForm"
 
 type NewCollectionProps = {
