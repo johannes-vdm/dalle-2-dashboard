@@ -1,0 +1,6 @@
+[submodule "projects/dalle2/dalle-2-dashboard"]
+	path = projects/dalle2/dalle-2-dashboard
+	url = https://github.com/johannes-vdm/dalle-2-dashboard
+[submodule "projects/dalle-2-dashboard"]
+	path = projects/dalle-2-dashboard
+	url = https://github.com/johannes-vdm/dalle-2-dashboard
