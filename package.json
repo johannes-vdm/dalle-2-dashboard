@@ -7,6 +7,7 @@
     "build": "tsc && vite build",
     "preview": "vite preview"
   },
+  "homepage": "./projects/dalle-2-dashboard",
   "dependencies": {
     "@emotion/react": "^11.10.5",
     "@emotion/styled": "^11.10.5",
