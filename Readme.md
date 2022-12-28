@@ -65,10 +65,13 @@ The response will be:
        ],
      },
    }
-   ```
+```
 
 ## Tags
 These tags can be modified and removed at any point as tags are locally stored.
+
+To add a tag, visit the `generate new image` page and enter a value that does not already exist. This will give you the option to add that value as a tag.
+
 ```typescript
 
   const defaultTags: Tag[] = [
@@ -125,8 +128,8 @@ uuidv4() command.
     isMulti
   />
 ```
+Tags stored locally
 ```json
-// Tags stored locally
 [
     {
         "id": "a7217a6d-ae56-4d87-bd8a-1512d854f069",
@@ -149,7 +152,6 @@ uuidv4() command.
         "label": "Surreal Art"
     },
     ...
-    // New tags are added with the method mentioned above
 ]
 ```
 ### Image Collection
