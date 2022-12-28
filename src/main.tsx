@@ -5,7 +5,7 @@ import App from "./components/App"
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename="/projects/dalle-2-dashboard">
       <App />
     </BrowserRouter>
   </React.StrictMode>
