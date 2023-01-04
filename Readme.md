@@ -17,8 +17,6 @@ or run this command in your console.
 ```js
 localStorage.clear()
 ```
-Tags are also locally addable by typing a creating a tag in the dropdown field.
-
 ## API
 ```ts
 import { Configuration, OpenAIApi } from "openai"
@@ -99,7 +97,6 @@ To add a tag, visit the `generate new image` page and enter a value that does no
 
 ```
 
-## Tags
 Tags are completely addable, removable and modifyable.
 If a tag is added, a unique id is generated through the  
 uuidv4() command.
