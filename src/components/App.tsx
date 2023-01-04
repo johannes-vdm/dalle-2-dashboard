@@ -1,13 +1,11 @@
-import { useMemo, useState } from "react"
+import { useMemo } from "react"
 
-
-import { Routes, Route, Navigate } from "react-router-dom"
+import { Routes, Route } from "react-router-dom"
 
 import { NewCollection } from "./NewCollection"
 import { useLocalStorage } from "../hooks/useLocalStorage"
 import { v4 as uuidV4 } from "uuid"
 import { CollectionList } from "./CollectionList"
-
 import '../globals.css'
 import { Container } from "@mui/material"
 
@@ -137,32 +135,31 @@ function App() {
   }
 
   return (
-    <Container maxWidth="lg">
-
-      <Routes>
-        <Route
-          path="/"
-          element={
-            <CollectionList
-              collections={collectionsWithTags}
-              availableTags={tags}
-              onUpdateTag={updateTag}
-              onDeleteTag={deleteTag}
-              onToggleFavorite={toggleFavorite}
-            />
-          }
-        />
-        <Route
-          path="/new"
-          element={
-            <NewCollection
-              onSubmit={onCreateCollection}
-              onAddTag={addTag}
-              availableTags={tags}
-            />
-          }
-        />
-      </Routes>
+      <Container maxWidth="lg">
+        <Routes>
+          <Route
+            path="/"
+            element={
+              <CollectionList
+                collections={collectionsWithTags}
+                availableTags={tags}
+                onUpdateTag={updateTag}
+                onDeleteTag={deleteTag}
+                onToggleFavorite={toggleFavorite}
+              />
+            }
+          />
+          <Route
+            path="/new"
+            element={
+              <NewCollection
+                onSubmit={onCreateCollection}
+                onAddTag={addTag}
+                availableTags={tags}
+              />
+            }
+          />
+        </Routes>
       </Container>
   )
 }

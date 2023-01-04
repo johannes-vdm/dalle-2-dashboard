@@ -1,7 +1,6 @@
   import { Backdrop, IconButton, ImageListItem, ImageListItemBar, Button, Modal, Box } from '@mui/material'
-  // import { Modal } from 'react-bootstrap'
-  import FavoriteOutlinedIcon from '@mui/icons-material/FavoriteOutlined';
-  import FavoriteBorderOutlinedIcon from '@mui/icons-material/FavoriteOutlined';
+  // import FavoriteOutlinedIcon from '@mui/icons-material/FavoriteOutlined';
+  // import FavoriteBorderOutlinedIcon from '@mui/icons-material/FavoriteOutlined';
 
   export type Images = {
     url: string,

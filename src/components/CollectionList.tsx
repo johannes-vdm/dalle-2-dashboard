@@ -120,6 +120,10 @@ function CollectionCard({ body, images, tags, onToggleFavorite }: CollectionCard
   const [isOpen, setIsOpen] = useState(false)
   const [currentIndex, setCurrentIndex] = useState(0)
 
+  const handleImgError = () => {
+    localStorage.clear();
+  }
+
   return (
     <Card>
       <CardContent>
@@ -141,7 +145,7 @@ function CollectionCard({ body, images, tags, onToggleFavorite }: CollectionCard
               setCurrentIndex(index)
             }}
           >
-            <img src={image.url} width={'auto'} style={{ cursor: 'pointer' }} />
+            <img src={image.url} width={'auto'} style={{ cursor: 'pointer' }} onError={handleImgError}/>
             <ImageListItemBar
               style={{ backgroundColor: 'transparent' }}
               actionIcon={
